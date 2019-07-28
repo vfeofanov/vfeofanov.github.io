@@ -79,40 +79,29 @@
   </head>
   <body>
 
-	
-
-<!--
-    <nav class="menu_2">
-      <ul class="menu__list">
-        <li class="menu__group"><a href="index.html" class="menu__link">Home</a></li>
-        <li class="menu__group"><a href="resume.html" class="menu__link">Resume</a></li>
-        <li class="menu__group"><a href="projects.html" class="menu__link">Projects</a></li>
-        <li class="menu__group"><a href="code.html" class="menu__link">Code</a></li>
-        <li class="menu__group"><a href="teaching.html" class="menu__link">Teaching</a></li>
-        <li class="menu__group"><a href="contact.html" class="menu__link">Contact</a></li>
-      </ul>
-    </nav>
--->
-
-	
-	
     <main role="main">
-      <!-- <article id="webslides"> -->
-      <article>
-        <!-- Quick Guide
-          - Each parent <section> in the <article id="webslides"> element is an individual slide.
-          - Vertical sliding = <article id="webslides" class="vertical">
-          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
-        -->
-		
-        <section class="bg-black aligncenter">
+      <article class="bg-black" id="contact_article">
+		<!-- background -->
 		<span class="background dark" style="background-image:url('img/bg/mountains.jpg')"></span>
-          <div class="wrap">
-              <div class="flex-content">
-				<!-- <p class="text-intro">The full curriculum vitae can be downloaded by clicking the button below:</p>			   -->
-                <h1><strong>
+
+		<!-- horizontal menu -->
+		<nav class="menu_2" id="contact_menu">
+		<ul class="menu__list">
+		<li class="menu__group"><a href="index.html" class="menu__link">Home</a></li>
+		<li class="menu__group"><a href="resume.html" class="menu__link">Resume</a></li>
+		<li class="menu__group"><a href="projects.html" class="menu__link">Projects</a></li>
+		<li class="menu__group"><a href="code.html" class="menu__link">Code</a></li>
+		<li class="menu__group"><a href="teaching.html" class="menu__link">Teaching</a></li>
+		<li class="menu__group"><a href="contact.html" class="menu__link">Contact</a></li>
+		</ul>
+		</nav>
+		
+		<!-- content -->
+		<div class="wrap aligncenter" style="padding-top: 3%;">
+			<div class="flex-content">
+				<h1><strong>
 					Contact Information
-                </strong></h1>
+				</strong></h1>
 				<h3 style="text-decoration: underline;">
 					<i>Address</i>
 				</h3>
@@ -128,22 +117,17 @@
 					<p class="text-intro">firstname.lastname@univ-grenoble-alpes.fr</p>
 				</div>
 				<div>
-				<a id="myImg" alt="Location" class="button ghost" title="Open Map"> <i class="fas fa-map-marker-alt"></i>  Open Map</a>
+					<a id="myImg" alt="Location" class="button ghost" title="Open Map"> <i class="fas fa-map-marker-alt"></i>  Open Map</a>
 				</div>
 				<div id="myModal" class="modal">
-				  <span id="close-cross" class="close">&times;</span>
-				  <!-- <div id="Map" class="map modal-content"></div> -->
-				  <div id="img01" class="map modal-content"></div>
-				  <!-- <img class="modal-content" id="img01"> -->
-				  <!-- <div id="caption"></div> -->
+					<span id="close-cross" class="close">&times;</span>
+					<div id="img01" class="map modal-content"></div>
 				</div>
 				<a href="#" class="close-modal"></a>
-              </div>
-              <!-- end .flex-content-->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-		
+			</div>
+			<!-- end .flex-content-->
+		</div>
+		<!-- .end .wrap -->
       </article>
     </main>
     <!--main-->
