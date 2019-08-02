@@ -1,30 +1,3 @@
-/* .menu_2{ */
-/*
-  background-color: #6c5ce7;
-*/
-  /* background-color: #2C2C94; */
-  /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24); */
-/* } */
-
-#contact_menu{
-   background-color: rgba(255, 255, 255, 0);
-}
-
-#contact_article{
-	min-height: 100vh;
-}
-
-#contact_menu:hover .menu__link:not(:hover){
-  color: #fff;
-  opacity: 0;
-}
-
-
-.menu_2{
-  background-color: #2C2C94;
-  box-shadow: 0 1vh 3vh 0 rgba(0, 0, 0, .12), 0 1vh 2vh 0 rgba(0, 0, 0, .24);
-}
-
 .menu__list{
   text-align: center;
   padding-left: 0;
@@ -32,6 +5,7 @@
   margin-bottom: 0;
   list-style: none;  
 }
+
 
 .menu__link{
   display: block;
@@ -55,6 +29,16 @@
 }
 
 @media (min-width: 601px){
+	
+  .menu_2{
+	background-color: #2C2C94;
+	box-shadow: 0 1vh 3vh 0 rgba(0, 0, 0, .12), 0 1vh 2vh 0 rgba(0, 0, 0, .24);
+    visibility: visible;
+  }
+  
+  .overlay-button{
+	display: None;
+  }
 
   .menu__list{
     display: flex;  
@@ -96,13 +80,134 @@
     width: 100%;
     transition-duration: .15s;
   }
+  
+  .menu_2:hover .menu__link:not(:hover){
+    color: #2C2C94;
+   }
 }
 
-/* hover effect */
-
-.menu_2:hover .menu__link:not(:hover){
-/*
-  color: #241c69;
-*/
-  color: #2C2C94;
+/* mobile menu with overlay */
+@media (max-width: 601px){
+	.menu_2{
+	  background-color: #2C2C94;
+	  /* box-shadow: 0 1vh 3vh 0 rgba(0, 0, 0, .12), 0 1vh 2vh 0 rgba(0, 0, 0, .24); */
+	  min-height: 100vh;
+	  width: 100vw;
+	  /* background: #ec6451; */
+	  z-index: 10;
+	  position: fixed;
+	  visibility: hidden;
+	}
+	.menu_2 ul {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-direction: column;
+	  text-align: center;
+	  min-height: 100vh;
+	  padding-left: 0;
+	  list-style-type: none;
+	}
 }
+
+
+
+/* transparent menu for contact section */
+/* available only for wide screens */
+@media (min-width: 601px){
+	#contact_menu{
+	   background-color: rgba(255, 255, 255, 0);
+	}
+
+	#contact_article{
+		min-height: 100vh;
+	}
+
+	#contact_menu:hover .menu__link:not(:hover){
+	  color: #fff;
+	  opacity: 0;
+	}
+}
+
+/* white triple bar for contact section */
+/* available only for small screens */
+@media (max-width: 601px){
+	#contact-button span, #contact-button span:before, #contact-button span:after {
+	  background: #F9F8F8;
+	}
+	input[type=checkbox]:checked ~ #contact-button:hover span, input[type=checkbox]:checked ~ #contact-button span {
+	  background: transparent;
+	}
+}
+
+
+
+/* menu triple bar */
+
+.overlay-button {
+  position: fixed;
+  left: 2em;
+  top: 1em;
+  padding: 26px 11px;
+  z-index: 11;
+  cursor: pointer;
+  user-select: none;
+}
+.overlay-button span {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: black;
+  position: relative;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+.overlay-button span:before {
+  top: -10px;
+  visibility: visible;
+}
+.overlay-button span:after {
+  top: 10px;
+}
+.overlay-button span:before, .overlay-button span:after {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: black;
+  position: absolute;
+  content: "";
+  transition: all .2s ease-in-out;
+}
+.overlay-button:hover span, .overlay-button:hover span:before, .overlay-button:hover span:after {
+  background: #282828;
+}
+
+/* when it is clicked */
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ .menu_2 {
+  visibility: visible;
+}
+
+input[type=checkbox]:checked ~ .overlay-button:hover span, input[type=checkbox]:checked ~ .overlay-button span {
+  background: transparent;
+}
+input[type=checkbox]:checked ~ .overlay-button span:before {
+  transform: rotate(45deg) translate(7px, 7px);
+  opacity: 1;
+  background: #F9F8F8;
+}
+input[type=checkbox]:checked ~ .overlay-button span:after {
+  transform: rotate(-45deg) translate(7px, -7px);
+  background: #F9F8F8;
+}
+
+
+/* .menu_2.active { */
+  /* visibility: visible; */
+/* } */
+
+
