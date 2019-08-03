@@ -350,3 +350,52 @@ a {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+@media (min-width: 601px){
+	#index-page {
+		margin-left:11%; 
+		margin-top:4%;
+	}
+		
+	#contact-page{
+		padding-top: 1%;
+	}
+	
+	#teaching-page {
+		margin-left:11%; 
+		margin-top:4%;
+	}
+	
+	#sadm-page {
+		margin-top: 4%;
+	}
+}
+
+@media (max-width: 601px){
+	#index-page {
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-top: 2%;
+		padding-bottom: 3%;
+		text-align: center;
+	}
+	
+	#teaching-page {
+		padding-right: 3%;
+		padding-top: 2%;
+		margin-top: 2%;
+		padding-bottom: 3%;
+		text-align: center;
+	}
+	
+	#teaching-gallery {
+		margin-left: -3.5%;
+	}
+	
+	#sadm-page {
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-top: 14%;
+		padding-bottom: 3%;
+	}
+}

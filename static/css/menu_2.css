@@ -135,6 +135,7 @@
 	#contact-button span, #contact-button span:before, #contact-button span:after {
 	  background: #F9F8F8;
 	}
+	
 	input[type=checkbox]:checked ~ #contact-button:hover span, input[type=checkbox]:checked ~ #contact-button span {
 	  background: transparent;
 	}
@@ -146,16 +147,16 @@
 
 .overlay-button {
   position: fixed;
-  left: 2em;
+  left: 0.5em;
   top: 1em;
-  padding: 26px 11px;
+  /* padding: 26px 11px; */
   z-index: 11;
   cursor: pointer;
   user-select: none;
 }
 .overlay-button span {
   height: 4px;
-  width: 35px;
+  width: 30px;
   border-radius: 2px;
   background-color: black;
   position: relative;
@@ -171,7 +172,7 @@
 }
 .overlay-button span:before, .overlay-button span:after {
   height: 4px;
-  width: 35px;
+  width: 30px;
   border-radius: 2px;
   background-color: black;
   position: absolute;
