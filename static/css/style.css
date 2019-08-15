@@ -369,6 +369,18 @@ a {
 	#sadm-page {
 		margin-top: 4%;
 	}
+	
+	#publications-page{
+		padding-top: 3%;
+	}	
+	
+	#materials-page{
+		padding-top: 2%;
+	}
+
+	#research-page{
+		padding-top: 3%;
+	}
 }
 
 @media (max-width: 601px){
@@ -398,4 +410,25 @@ a {
 		padding-top: 14%;
 		padding-bottom: 3%;
 	}
+	
+	#materials-page{
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-top: 12%;
+	}
+	
+	#publications-page{
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-top: 12%;
+	}	
+	
+	#research-page{
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-top: 12%;
+	}
+	
+	
+	
 }

@@ -2160,12 +2160,15 @@ CV / News
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;   }
   .flexblock.activity li {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     position: relative;
+	padding: 0rem;
+	padding-top: 1rem;
+	padding-bottom: -1rem;
     width: auto; }
   .flexblock.activity p {
     margin-bottom: 0;
@@ -2724,6 +2727,33 @@ button {
   text-align: center; }
   .button svg {
     font-size: 2.4rem; }
+	
+
+.small-button {
+  /* cursor: pointer; */
+  /* display: inline-block; */
+  font-size: 1.5rem;
+  /* font-weight: 400; */
+  /* line-height: 4.8rem; */
+  min-width: 4rem;
+  /* padding: 0 0rem; */
+  /* text-align: center; } */
+  /* .button svg { */
+    /* font-size: 2.4rem; } */
+	}
+	
+	
+.button-github:hover{
+color:black;	
+}
+
+.button-pdf:hover{
+color:#D70000;	
+}
+
+.button-web:hover{
+color:green;	
+}
 
 .button.radius,
 input.radius {
