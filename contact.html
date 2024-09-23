@@ -108,11 +108,11 @@
 					<i>Address</i>
 				</h3>
 				<div style="font-size:14pt;">
-					<p class="text-intro" style="margin-bottom:1px;">Bureau 322</p>
-					<p class="text-intro" style="margin-bottom:1px;">Bâtiment IMAG</p>
-					<p class="text-intro" style="margin-bottom:1px;">Université Grenoble Alpes</p>
-					<p class="text-intro" style="margin-bottom:1px;">700 avenue Centrale</p>
-					<p class="text-intro" style="margin-bottom:25px;">38400 Saint-Martin-d’Hères, France</p>
+					<!-- <p class="text-intro" style="margin-bottom:1px;">Bureau 322</p> -->
+					<p class="text-intro" style="margin-bottom:1px;">Paris Noah's Ark Lab</p>
+					<p class="text-intro" style="margin-bottom:1px;">Huawei Technologies France</p>
+					<p class="text-intro" style="margin-bottom:1px;">18 Quai du Point du Jour</p>
+					<p class="text-intro" style="margin-bottom:25px;">92100 Boulogne-Billancour, France</p>
 				</div>
 				<h3 style="text-decoration: underline;"><i> Email</i></h3>
 				<div style="font-size:14pt;margin-bottom:35px;">
@@ -152,11 +152,11 @@
 
 		function init(){ 
 			myMap = new ymaps.Map("img01", {
-				center: [45.19034, 5.76707],
+				center: [48.83245830739661, 2.259360955042329],
 				zoom: 15
 		});
 
-		myPlacemark = new ymaps.Placemark([45.19034, 5.76707], { hintContent: 'Bâtiment IMAG', balloonContent: 'Le bâtiment regroupe les laboratoires et services suivants: AMIES, GRICAD, LIG, LJK, MI2S, VERIMAG.'
+		myPlacemark = new ymaps.Placemark([48.83245830739661, 2.259360955042329], { hintContent: 'Arc de Seine', balloonContent: 'Huawei Technologies France.'
 			});
 			
 			myMap.geoObjects.add(myPlacemark);
